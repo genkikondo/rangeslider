@@ -10,7 +10,7 @@
         "less/rangeslider.less"
     ],
     "dependencies": {
-        "jquery": "2.1.1",
+        "jquery": "2.1.1"
     },
     "moduleType": [
         "globals"
@@ -22,5 +22,5 @@
         "test",
         "tests"
     ],
-    "license": "MIT",
+    "license": "MIT"
 }
