@@ -1,41 +1,26 @@
 {
-    "name": "ion.rangeSlider",
-    "version": "2.0.6",
-    "homepage": "https://github.com/IonDen/ion.rangeSlider",
-    "authors": [
-        {
-            "name": "IonDen",
-            "email": "denis.ineshin@gmail.com",
-            "homepage": "http://ionden.com"
-        }
-    ],
-    "description": "Powerful range slider with skin support",
+    "name": "rangeslider",
+    "description": "Powerful range slider",
     "repository": {
         "type": "git",
-        "url": "git://github.com/IonDen/ion.rangeSlider.git"
+        "url": "git://github.com/genkikondo/rangeslider.git"
     },
     "main": [
-        "js/ion.rangeSlider.js",
-        "css/ion.rangeSlider.css",
-        "css/ion.rangeSlider.skinFlat.css",
-        "img/sprite-skin-flat.png"
+        "js/rangeslider.js",
+        "less/rangeslider.less"
     ],
     "dependencies": {
-        "jquery": ">=1.8"
+        "jquery": "2.1.1",
     },
     "moduleType": [
         "globals"
     ],
-    "keywords": [
-        "jquery-plugin",
-        "diapason",
-        "ion",
-        "range",
-        "slider"
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
     ],
     "license": "MIT",
-    "ignore": [
-        "PSD",
-        "ion-rangeSlider.jquery.json"
-    ]
 }
