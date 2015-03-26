@@ -876,7 +876,7 @@ define(function rangeSlider() {
           p_ring = 0,
           f_ring = 0,
           html = '',
-          num_rings = Math.round(this.coords.p_single_real / this.coords.p_step);
+          num_rings = Math.round(this.coords.p_single_real / this.coords.p_step) + 1;
 
       for (i = num_rings; i > 0; i--) {
         w_diff = 4 * i - 2;
