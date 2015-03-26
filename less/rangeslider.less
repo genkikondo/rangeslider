@@ -1,9 +1,10 @@
 @handle-size: 12px;
 @slider-top: 70%;
-@slider-color: @tw-color-gray-light;
+@slider-primary-color: #55acee;
+@slider-secondary-color: #ccd6dd;
 @slider-line-height: 0px;
 @label-font-size: 14px;
-@label-font-weight: @tw-font-weight-heavy;
+@label-font-weight: 500;
 @label-line-height: 1.333;
 
 .irs {
@@ -22,7 +23,7 @@
     top: @slider-top;
     transform: translateY(-50%);
     background: @color-white;
-    border: 1px solid @slider-color;
+    border: 1px solid @slider-secondary-color;
     border-radius: 16px;
 
     .irs-line-left, .irs-line-mid, .irs-line-right {
@@ -53,9 +54,9 @@
     height: @slider-line-height;
     top: @slider-top;
     transform: translateY(-50%);
-    border-top: 1px solid @slider-color;
-    border-bottom: 1px solid @slider-color;
-    background: @tw-color-blue-primary;
+    border-top: 1px solid @slider-secondary-color;
+    border-bottom: 1px solid @slider-secondary-color;
+    background: @slider-primary-color;
   }
 
   .irs-bar-edge {
@@ -66,9 +67,9 @@
     transform: translateY(-50%);
     left: 0;
     width: 14px;
-    border: 1px solid @slider-color;
+    border: 1px solid @slider-secondary-color;
     border-right: 0;
-    background: @tw-color-blue-primary;
+    background: @slider-primary-color;
     border-radius: 16px 0 0 16px;
   }
 
@@ -80,7 +81,7 @@
     transform: translateY(-50%);
     width: @handle-size;
     height: @handle-size;
-    background: @slider-color;
+    background: @slider-secondary-color;
     border-radius: @handle-size;
     cursor: pointer;
   }
@@ -93,7 +94,7 @@
     transform: translateY(-50%);
     width: @handle-size;
     height: @handle-size;
-    background: @tw-color-blue-primary;
+    background: @slider-primary-color;
     border-radius: @handle-size;
     cursor: pointer;
   }
@@ -105,14 +106,14 @@
     top: @slider-top;
     transform: translateY(-50%);
     background: @color-white;
-    border: 1px solid @tw-color-blue-primary;
+    border: 1px solid @slider-primary-color;
     cursor: pointer;
   }
 
   .irs-min, .irs-max {
     position: absolute;
     display: block;
-    color: @slider-color;
+    color: @slider-secondary-color;
     font-size: @label-font-size;
     font-weight: @label-font-weight;
     line-height: @label-line-height;
@@ -135,7 +136,7 @@
     left: 0;
     cursor: default;
     white-space: nowrap;
-    color: @tw-color-blue-primary;
+    color: @slider-primary-color;
     font-size: @label-font-size;
     font-weight: @label-font-weight;
     line-height: @label-line-height;
